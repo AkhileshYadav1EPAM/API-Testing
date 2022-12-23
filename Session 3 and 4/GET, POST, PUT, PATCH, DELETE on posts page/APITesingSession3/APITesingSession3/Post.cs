@@ -29,7 +29,7 @@ namespace APITestingSession3
             string responseContent = response.Content;
 
             var responseInDeSerialForm = JsonConvert
-                                         .DeserializeObject<ValidationOfRetrievePostResponse[]>
+                                               .DeserializeObject<ValidationOfRetrievePostResponse[]>
                                          (responseContent);
 
             Assert.AreEqual(1, responseInDeSerialForm[0].id);
